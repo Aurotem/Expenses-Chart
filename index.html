@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-top">
+        <div class="container-top-left">
+          <span class="bottom-inf" style="color: rgba(255, 255, 255, 0.8)"
+            >My Balance</span
+          >
+          <span class="balance">$921.48</span>
+        </div>
+        <div class="container-top-right">
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+        </div>
+      </div>
+      <div class="container-bottom">
+        <div class="container-bottom-header">
+          <h3 class="main-header">Spending - Last 7 days</h3>
+        </div>
+        <div class="graphic">
+          <div class="day">
+            <div id="mon" class="bar"></div>
+            <div class="dt">mon</div>
+          </div>
+          <div class="day">
+            <div id="tue" class="bar"></div>
+            <div class="dt">tue</div>
+          </div>
+          <div class="day">
+            <div id="wed" class="bar"></div>
+            <div class="dt">wed</div>
+          </div>
+          <div class="day">
+            <div id="thu" class="bar"></div>
+            <div class="dt">thu</div>
+          </div>
+          <div class="day">
+            <div id="fri" class="bar"></div>
+            <div class="dt">fri</div>
+          </div>
+          <div class="day">
+            <div id="sat" class="bar"></div>
+            <div class="dt">sat</div>
+          </div>
+          <div class="day">
+            <div id="sun" class="bar"></div>
+            <div class="dt">sun</div>
+          </div>
+          <div id="bar-info"></div>
+        </div>
+        <div class="hr"></div>
+        <div class="container-bottom-total">
+          <div class="bottom-left">
+            <span class="bottom-inf">Total this month</span>
+            <h2>$478.33</h2>
+          </div>
+          <div class="bottom-right">
+            <h5>+2.4%</h5>
+            <span class="bottom-inf">from last month</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Aurotem</a>.
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
